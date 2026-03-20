@@ -1,0 +1,126 @@
+.events-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    background-color: #f4f7f6;
+}
+
+.event-card {
+    background: #ffffff;
+    border-radius: 15px;
+    border: none;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease;
+    overflow: hidden;
+}
+
+.event-card:hover {
+    transform: translateY(-5px);
+}
+
+.event-card-header {
+    background: #2c3e50;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
+
+.event-card-header h3 {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.event-card-body {
+    padding: 20px;
+    flex-grow: 1;
+}
+
+.members-badge {
+    background: #e8f4fd;
+    color: #3498db;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: bold;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.event-meta {
+    margin-bottom: 15px;
+}
+
+.meta-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 8px;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.meta-item i {
+    color: #e67e22;
+    width: 16px;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #eee;
+    margin: 15px 0;
+}
+
+.event-info p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: #666;
+    margin: 0;
+}
+
+.event-card-footer {
+    padding: 15px 20px;
+    background: #fafafa;
+    border-top: 1px solid #f0f0f0;
+}
+
+.btn-join {
+    width: 100%;
+    background-color: #27ae60;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+.btn-leave {
+    width: 100%;
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+.btn-redact {
+    width: 100%;
+    background-color: rgb(0, 140, 255);
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.btn-join:hover {
+    background-color: #219150;
+}
